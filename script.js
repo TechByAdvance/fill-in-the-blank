@@ -1,6 +1,6 @@
-$blanks = document.querySelectorAll(".blank");
-for (let $blank of $blanks) {
-    $blank.addEventListener("click", () => {
-        $blank.classList.toggle("true");
+let $blank = document.querySelectorAll(".blank");
+for (let i = 0; i < $blank.length; i++) {
+    $blank[i].addEventListener("click", () => {
+        $blank[i].classList.toggle("true");
     })
 }
